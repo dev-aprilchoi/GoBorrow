@@ -1,0 +1,589 @@
+body, html {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+head {
+    display: none;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+body {
+    background: #fff;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+#__next, #root, #storybook-root, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.BoxLayout_root__Ya1Da .container-doc {
+    height: 100%;
+    font-size: 0;
+}
+
+.BoxLayout_root__Ya1Da .container-doc .inner_container {
+    display: inline-block;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.BoxLayout_root__Ya1Da .doc-main .doc-title {
+    padding-top: 50px;
+}
+
+.BoxLayout_root__Ya1Da .doc-title .tit_service {
+    display: block;
+}
+
+.BoxLayout_root__Ya1Da .doc-title .tit_service .logo_kakao {
+    display: block;
+    width: 88px;
+    height: 27px;
+    margin: 0 auto;
+    background: #fff url(../images/kakao-logo.png) no-repeat 0 0;
+    background-size: 100px 80px;
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.kakao {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.BoxLayout_root__Ya1Da .content-article {
+    width: 580px;
+    height: 100%;
+    margin: 40px auto 42px;
+    padding: 0 69px;
+    border: 1px solid rgba(0,0,0,.12);
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.BoxLayout_root__Ya1Da .content-article .cont_login {
+    word-wrap: break-word;
+}
+
+.BoxLayout_root__Ya1Da .content-article [class^=cont_] {
+    position: relative;
+    height: 100%;
+    padding: 55px 0 50px;
+    box-sizing: border-box;
+}
+
+.BoxLayout_root__Ya1Da .login_kakaomail .item_form.fst {
+    margin-top: 4px;
+}
+
+.item_form.fst {
+    margin-top: 47px;
+}
+
+.item_form {
+    position: relative;
+    margin-top: 5px;
+    padding-bottom: 3px;
+}
+
+.box_tf {
+    position: relative;
+    border: solid #ccc;
+    border-width: 0 0 2px;
+}
+
+.screen_out {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.ir_caption, .screen_out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.box_tf .tf_g {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 0 8px;
+    border: 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: #191919;
+    background-color: transparent;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    outline: 0 none;
+    caret-color: #191919;
+    opacity: 1;
+}
+
+html input[type=button], input[type=email], input[type=password], input[type=reset], input[type=search], input[type=submit], input[type=tel], input[type=text] {
+    border: 0;
+    border-radius: 0;
+}
+
+.box_tf .util_tf {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    z-index: 10;
+    min-width: 55px;
+    height: 43px;
+    font-size: 0;
+    text-align: right;
+}
+
+.item_form {
+    position: relative;
+    margin-top: 5px;
+    padding-bottom: 3px;
+}
+
+.screen_out {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.ir_caption, .screen_out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+.box_tf .tf_g[type=password] {
+    padding: 12px 0 8px;
+    font: small-caption;
+    font-size: 18px;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo-Regular,맑은 고딕,Malgun Gothic,돋움,dotum,sans-serif;
+    letter-spacing: .15em;
+}
+
+.box_tf .util_tf {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    z-index: 10;
+    min-width: 55px;
+    height: 43px;
+    font-size: 0;
+    text-align: right;
+}
+
+.BoxLayout_root__Ya1Da .set_login {
+    margin-top: 25px;
+}
+
+.BoxLayout_root__Ya1Da .set_login .item_choice {
+    float: left;
+    padding-right: 0;
+}
+
+.BoxLayout_root__Ya1Da .cont_login .item_choice {
+    display: block;
+}
+
+.item_choice {
+    display: block;
+    position: relative;
+    vertical-align: top;
+}
+
+.BoxLayout_root__Ya1Da .set_login .item_choice .inp_choice {
+    right: 24px;
+    width: auto;
+}
+
+.BoxLayout_root__Ya1Da .set_login .inp_choice {
+    top: 0;
+}
+
+.item_choice .inp_choice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+.BoxLayout_root__Ya1Da .set_login .item_choice .lab_choice {
+    float: left;
+}
+
+.BoxLayout_root__Ya1Da .set_login .lab_choice {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0,0,0,.7);
+}
+
+.os_windows .item_choice .lab_choice {
+    line-height: 20px;
+}
+
+.item_choice .lab_choice {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    cursor: pointer;
+}
+
+.BoxLayout_root__Ya1Da .set_login .lab_choice .ico_check {
+    margin: 0 8px 0 0;
+}
+
+.id-tip{
+    color:rgba(0,0,0,.06);
+    padding: 0 16px;
+    font-size: 14px;
+    display: none;
+}
+
+.box_tf >:first-child{
+    font-size: 10px;
+    display: none;
+}
+
+.id-tip >:last-child{
+    color: rgba(0,0,0,.06);
+    font-size: 10px;
+    display: none;
+}
+
+.err-div{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 51px;
+    color: #191919;
+    background-color: #f0f0f0;
+}
+
+.err-div >p{
+    color: palevioletred;
+    font-size: 16px;
+    display: none;
+}
+
+.item_choice .lab_choice .ico_check {
+    background-position: 0 0;
+}
+
+.item_choice .lab_choice .ico_comm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.ico_account, .ico_comm {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    vertical-align: top;
+}
+
+.circle-button{
+    width: 20px;
+    height: 20px;
+}
+
+.info-button{
+    width: 21px;
+    height: 21px;
+}
+
+.BoxLayout_root__Ya1Da .set_login .item_choice .btn_help {
+    float: left;
+    margin: 1px 0 0 6px;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.BoxLayout_root__Ya1Da .set_login .item_choice .ico_help {
+    width: 18px;
+    height: 18px;
+    background-position: -120px -110px;
+}
+
+.ico_help {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: 0 -140px;
+}
+
+.ico_account, .ico_comm {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    vertical-align: top;
+}
+
+.ico_comm {
+    background: url(/images/pc/ico_comm.png) 0 0 no-repeat;
+    background-size: 300px auto;
+}
+
+.BoxLayout_root__Ya1Da .set_login .item_choice:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.BoxLayout_root__Ya1Da .set_login:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.confirm_btn {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.btn_g.highlight {
+    background-color: #fee500;
+}
+
+address, button[type=submit], caption, cite, code, dfn, em, input[type=submit], var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.btn_g {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 51px;
+    color: #191919;
+    background-color: #f0f0f0;
+}
+
+.BoxLayout_root__Ya1Da .line_or {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.BoxLayout_root__Ya1Da .line_or:after, .BoxLayout_root__Ya1Da .line_or:before {
+    display: inline-block;
+    width: calc(50% - 20px);
+    height: 1px;
+    margin: 8px 0;
+    background-color: rgba(0,0,0,.06);
+    vertical-align: top;
+    content: "";
+}
+
+.BoxLayout_root__Ya1Da .line_or .txt_or {
+    display: inline-block;
+    width: 40px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #828282;
+}
+
+.BoxLayout_root__Ya1Da .line_or:after, .BoxLayout_root__Ya1Da .line_or:before {
+    display: inline-block;
+    width: calc(50% - 20px);
+    height: 1px;
+    margin: 8px 0;
+    background-color: rgba(0,0,0,.06);
+    vertical-align: top;
+    content: "";
+}
+
+.BoxLayout_root__Ya1Da .cont_login .info_user {
+    margin-top: 26px;
+}
+
+.BoxLayout_root__Ya1Da .info_user .link_join {
+    float: left;
+    font-size: 12px;
+}
+
+.BoxLayout_root__Ya1Da .cont_login a {
+    color: #191919;
+}
+
+a {
+    cursor: pointer;
+}
+
+a, a:active, a:hover {
+    text-decoration: none;
+}
+
+.BoxLayout_root__Ya1Da .info_user .list_user {
+    float: right;
+}
+
+dl, li, menu, ol, ul {
+    list-style: none;
+}
+
+.BoxLayout_root__Ya1Da .info_user .list_user li:before {
+    content: "";
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 4px 10px;
+    background-color: rgba(0,0,0,.08);
+}
+
+.BoxLayout_root__Ya1Da .info_user .list_user .link_user {
+    float: left;
+    font-size: 12px;
+}
+
+.BoxLayout_root__Ya1Da .info_user .list_user li {
+    float: left;
+}
+
+.BoxLayout_root__Ya1Da .info_user .list_user li:before {
+    content: "";
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 4px 10px;
+    background-color: rgba(0,0,0,.08);
+}
+
+.BoxLayout_root__Ya1Da .info_user:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    content: "";
+}
+
+.doc-footer {
+    display: block;
+    padding-bottom: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.screen_out {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.ir_caption, .screen_out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.doc-footer .service_info, .doc-footer .service_info .link_info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.doc-footer .service_info .link_info:first-child {
+    margin-left: 0;
+}
+
+.doc-footer .service_info .link_info {
+    font-size: 12px;
+    padding: 0 5px;
+    color: #4c4c4c;
+}
+
+.doc-footer .service_info, .doc-footer .service_info .link_info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.doc-footer .service_info .link_info+.link_info {
+    margin-left: 5px;
+}
+
+.doc-footer .txt_copyright {
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 18px;
+    color: rgba(0,0,0,.5);
+}
+
+.doc-footer .link_kakaocorp {
+    font-weight: 700;
+    color: rgba(0,0,0,.5);
+}
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko" class="BoxLayout_root__Ya1Da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakao-login</title>
+    <link rel="stylesheet" href="../styles/kakao-login.css">
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body class="os_windows chrome pc type_responsive">
+    <div id="__next">
+        <div class="container-doc">
+            <div class="inner_container">
+                <main class="doc-main">
+                    <div class="doc-title">
+                       <h1 class="tit_service">
+                            <span class="logo_kakao">
+                                <span class="kakao">Kakao</span>
+                            </span>
+                       </h1>
+                    </div>
+                    <article id="mainContent" class="content-article">
+                        <div class="cont_login">
+                            <div class="login_kakaomail">
+                                <form>
+                                    <div class="item_form fst">
+                                        <div class="box_tf">
+                                            <label class="screen_out" for="id">입력</label>
+                                            <input type="text" id="loginId" name="loginId" placeholder="카카오메일 아이디, 이메일, 전화번호 " class="tf_g" value>
+                                            <div class="util_tf"></div>
+                                                <!-- <p class="err-msg" id="loginId-err-msg">카카오계정을 입력해 주세요.</p> -->
+                                            </div>
+                                                <p style="display: inline-flex;">TIP</p>
+                                                <p style="display: inline-flex;">카카오메일이 있다면 메일 아이디만 입력해 보세요.</p>
+                                        </div>
+                                    <div class="item_form">
+                                        <div class="box_tf">
+                                            <label class="screen_out" for="password">비밀번호 입력</label>
+                                            <input type="password" id="password" name="password" placeholder="비밀번호" autocomplete="off" class="tf_g">
+                                            <div class="util_tf"></div>
+                                        </div>
+                                    </div>
+                                    <div class="set_login">
+                                        <div class="item_choice">
+                                            <input type="checkbox" id="staySignedIn" class="inp_choice" name="staySignedIn" value="false">
+                                            <label class="lab_choice" for="staySignedIn" id="label-staySignedIn">
+                                                <span class="ico_comm ico_check"><img class="circle-button" src="../images/circle.png" alt="circle-button"></span>
+                                                로그인 상태 유지
+                                            </label>
+                                            
+                                            <button type="button" class="btn_help">
+                                                <span class="ico_comm ico_help"><img class="info-button" src="../images/info.png" alt="info-button">도움말 보기</span>
+                                            </button>
+                                        </div>
+                                        <div class="err-div">
+                                            <p class="pw-err-msg" id="password-check-err-msg">카카오계정 비밀번호를 입력해 주세요.(영문자/숫자/특수문자)</p>
+                                        </div>
+                                    </div>
+                                    <div class="confirm_btn">
+                                        <button type="submit" class="btn_g highlight submit">로그인</button>
+                                        <span class="line_or">
+                                            <span class="txt_or">또는</span>
+                                        </span>
+                                        <button type="button" class="btn_g">QR코드 로그인</button>
+                                    </div>
+                                </form>
+                                <div class="info_user">
+                                    <a href="https://accounts.kakao.com/weblogin/create_account/?lang=ko&continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fproxy%3DeasyXDM_Kakao_30gxiswlm13_provider%26ka%3Dsdk%252F1.43.1%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fm.bunjang.co.kr%26origin%3Dhttps%253A%252F%252Fm.bunjang.co.kr%26response_type%3Dcode%26redirect_uri%3Dkakaojs%26state%3D223u4rsvmkksris2uaef6c%26through_account%3Dtrue%26client_id%3D30314a9cf2f3bea24d7ee29a4258543e#selectVerifyMethod" class="link_join">회원가입</a>
+                                    <ul class="list_user">
+                                        <li>
+                                            <a href="https://accounts.kakao.com/weblogin/find_account?lang=ko&continue=%2Flogin%3Fcontinue%3Dhttps%253A%252F%252Fkauth.kakao.com%252Foauth%252Fauthorize%253Fproxy%253DeasyXDM_Kakao_30gxiswlm13_provider%2526ka%253Dsdk%25252F1.43.1%252520os%25252Fjavascript%252520sdk_type%25252Fjavascript%252520lang%25252Fko-KR%252520device%25252FWin32%252520origin%25252Fhttps%2525253A%2525252F%2525252Fm.bunjang.co.kr%2526origin%253Dhttps%25253A%25252F%25252Fm.bunjang.co.kr%2526response_type%253Dcode%2526redirect_uri%253Dkakaojs%2526state%253Dsdxjjojy23yv97o8pl6us%2526through_account%253Dtrue%2526client_id%253D30314a9cf2f3bea24d7ee29a4258543e%26talk_login%3Dhidden" class="link_user">계정 찾기</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://accounts.kakao.com/weblogin/find_password?lang=ko&continue=%2Flogin%3Fcontinue%3Dhttps%253A%252F%252Fkauth.kakao.com%252Foauth%252Fauthorize%253Fproxy%253DeasyXDM_Kakao_30gxiswlm13_provider%2526ka%253Dsdk%25252F1.43.1%252520os%25252Fjavascript%252520sdk_type%25252Fjavascript%252520lang%25252Fko-KR%252520device%25252FWin32%252520origin%25252Fhttps%2525253A%2525252F%2525252Fm.bunjang.co.kr%2526origin%253Dhttps%25253A%25252F%25252Fm.bunjang.co.kr%2526response_type%253Dcode%2526redirect_uri%253Dkakaojs%2526state%253Dsdxjjojy23yv97o8pl6us%2526through_account%253Dtrue%2526client_id%253D30314a9cf2f3bea24d7ee29a4258543e%26talk_login%3Dhidden">비밀번호 찾기</a>
+                                        </li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div>
+                    </article>
+                </main>
+                <footer class="doc-footer">
+                    <strong class="screen_out">서비스 이용정보</strong>
+                    <div class="service_info">
+                        <a href="https://www.kakao.com/policy/terms?lang=ko " class="link_info">이용약관</a>
+                        <a href="https://www.kakao.com/policy/privacy?lang=ko" class="link_info">
+                            <strong>개인정보 처리방침</strong>
+                        </a>
+                        <a href="https://www.kakao.com/policy/oppolicy?lang=ko">운영정책</a>
+                        <a href="https://cs.kakao.com/">고객센터</a>
+                        <a href="https://www.kakao.com/notices?lang=ko">공지사항</a>
+                    </div>
+                    <small class="txt_copyright">
+                        Copyright ©
+                        <a class="link_kakaocorp" href="https://www.kakaocorp.com/page/">Kakao Corp.</a>
+                        All rights reserved.
+                    </small>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
