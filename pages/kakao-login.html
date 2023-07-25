@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kakao-login</title>
     <link rel="stylesheet" href="../styles/kakao-login.css">
-    <link rel="stylesheet" href="../styles/register.css">
 </head>
 <body class="os_windows chrome pc type_responsive">
     <div id="__next">
@@ -26,35 +25,48 @@
                                     <div class="item_form fst">
                                         <div class="box_tf">
                                             <label class="screen_out" for="id">입력</label>
-                                            <input type="text" id="loginId" name="loginId" placeholder="카카오메일 아이디, 이메일, 전화번호 " class="tf_g" value>
+                                            <!-- 포커스가 됐을때 placeholder 비활성화, 입력값 없이 포커스 나갔을때 placeholder 활성화 시킴 -->
+                                            <input type="text" id="loginId" name="loginId" placeholder="카카오메일 아이디, 이메일, 전화번호" class="tf_g" value onfocus="this.placeholder = ''"/n onblur="this.placeholder = '카카오메일 아이디, 이메일, 전화번호'" />
                                             <div class="util_tf"></div>
                                                 <!-- <p class="err-msg" id="loginId-err-msg">카카오계정을 입력해 주세요.</p> -->
+                                                <div class="util_tf">
+                                                    <button type="button" class="btn_clear" img src="../images/icon/cancel.png">
+                                                        <span class="ico_comm ico_clear">
+                                                            입력 내용 지우기
+                                                        </span>
+                                                    </button>
+                                                    <span class="txt_mail" id="txtMail" style="display: none;">@kakao.com</span>
+                                                </div>
                                             </div>
-                                                <p style="display: inline-flex;">TIP</p>
-                                                <p style="display: inline-flex;">카카오메일이 있다면 메일 아이디만 입력해 보세요.</p>
-                                        </div>
+                                            <p class="info_tip" role="alert">
+                                                <span role="text">
+                                                    <span class="txt_tip">TIP</span>
+                                                    카카오메일이 있다면 메일 아이디만 입력해 보세요.
+                                                </span>
+                                            </p>
+                                    </div>
                                     <div class="item_form">
                                         <div class="box_tf">
+                                            <!-- 포커스가 됐을때 placeholder 비활성화, 입력값 없이 포커스 나갔을때 placeholder 활성화 시킴 -->
+                                            <!-- 비밀번호 input tag에 포커스가 되면 tip이 사라져야함 -->
                                             <label class="screen_out" for="password">비밀번호 입력</label>
-                                            <input type="password" id="password" name="password" placeholder="비밀번호" autocomplete="off" class="tf_g">
-                                            <div class="util_tf"></div>
+                                            <input type="password" id="password" name="password" placeholder="비밀번호" autocomplete="off" class="tf_g" onfocus="this.placeholder = ''"/ onblur="this.placeholder = '비밀번호 입력'" />
                                         </div>
                                     </div>
                                     <div class="set_login">
                                         <div class="item_choice">
                                             <input type="checkbox" id="staySignedIn" class="inp_choice" name="staySignedIn" value="false">
                                             <label class="lab_choice" for="staySignedIn" id="label-staySignedIn">
-                                                <span class="ico_comm ico_check"><img class="circle-button" src="../images/circle.png" alt="circle-button"></span>
+                                                <span class="ico_comm ico_check"><img class="circle-button" src="../images/icon/circle.png" alt="circle-button" onclick="checked()"></span>
                                                 로그인 상태 유지
                                             </label>
-                                            
-                                            <button type="button" class="btn_help">
-                                                <span class="ico_comm ico_help"><img class="info-button" src="../images/info.png" alt="info-button">도움말 보기</span>
-                                            </button>
                                         </div>
-                                        <div class="err-div">
-                                            <p class="pw-err-msg" id="password-check-err-msg">카카오계정 비밀번호를 입력해 주세요.(영문자/숫자/특수문자)</p>
-                                        </div>
+                                    </div>
+                                    <div class="box_desc" id="errorBox" role="alert" style="display: none;">
+                                        <p class="desc_error" id="errorP">
+                                            카카오계정을 입력해 주세요.
+                                            <br>
+                                        </p>
                                     </div>
                                     <div class="confirm_btn">
                                         <button type="submit" class="btn_g highlight submit">로그인</button>

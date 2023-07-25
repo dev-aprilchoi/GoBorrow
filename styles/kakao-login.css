@@ -66,7 +66,7 @@ blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4,
     width: 88px;
     height: 27px;
     margin: 0 auto;
-    background: #fff url(../images/kakao-logo.png) no-repeat 0 0;
+    background: #fff url(../images/logo/kakao-logo.png) no-repeat 0 0;
     background-size: 100px 80px;
     font-size: 19px;
     line-height: 27px;
@@ -154,6 +154,12 @@ blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4,
 html input[type=button], input[type=email], input[type=password], input[type=reset], input[type=search], input[type=submit], input[type=tel], input[type=text] {
     border: 0;
     border-radius: 0;
+}@media only screen and (max-width: 767px){
+.type_responsive .box_tf .util_tf {
+    top: 0;
+    height: auto;
+    min-height: 42px;
+}
 }
 
 .box_tf .util_tf {
@@ -165,6 +171,47 @@ html input[type=button], input[type=email], input[type=password], input[type=res
     height: 43px;
     font-size: 0;
     text-align: right;
+}
+
+@media only screen and (max-width: 767px){
+.type_responsive .box_tf .btn_clear {
+        padding: 6px 0;
+        margin-top: 0;
+}
+}
+    
+@media only screen and (max-width: 767px){
+.type_responsive .box_tf .btn_clear .ico_clear {
+    display: block;
+}
+}
+
+
+@media only screen and (max-width: 767px){
+.type_responsive .btn_clear .ico_clear {
+    width: 16px;
+    height: 16px;
+    margin: 7px;
+    background-position: -50px -25px;
+}
+}
+
+@media only screen and (max-width: 767px){
+.type_responsive .box_tf .txt_mail {
+    padding-top: 8px;
+    font-size: 15px;
+}
+}
+
+.box_tf .txt_mail {
+    display: inline-block;
+    padding: 10px 0 0 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #8e8e8e;
+    font-family: NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    letter-spacing: -.02em;
 }
 
 .item_form {
@@ -341,6 +388,18 @@ button, input, select, textarea {
     vertical-align: top;
 }
 
+.box_desc {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    background-color: #fafafa;
+}
+
+.box_desc .desc_error {
+    color: #e65f3e;
+}
+
 .circle-button{
     width: 20px;
     height: 20px;
@@ -368,6 +427,37 @@ button {
     background-position: -120px -110px;
 }
 
+@media only screen and (max-width: 767px){
+.BoxLayout_root__Ya1Da .type_responsive .info_tip {
+    padding: 6px 0 10px;
+    font-size: 11px;
+    line-height: 19px;
+}
+}
+
+.BoxLayout_root__Ya1Da .item_form .info_tip {
+    padding: 13px 0 8px;
+}
+
+.BoxLayout_root__Ya1Da .info_tip {
+    padding: 10px 0 16px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+}
+
+@media only screen and (max-width: 767px){
+.BoxLayout_root__Ya1Da .type_responsive .info_tip .txt_tip {
+    padding-right: 1px;
+}
+}
+
+.BoxLayout_root__Ya1Da .info_tip .txt_tip {
+    font-weight: 700;
+    color: #e65f32;
+}
+
+
 .ico_help {
     display: block;
     width: 20px;
@@ -385,7 +475,8 @@ button {
 }
 
 .ico_comm {
-    background: url(/images/pc/ico_comm.png) 0 0 no-repeat;
+    /* X버튼 왜 안나옴??? */
+    background: url(../images/icon/cancel.png) 0 0 no-repeat;
     background-size: 300px auto;
 }
 
