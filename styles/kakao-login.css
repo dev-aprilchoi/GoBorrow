@@ -394,6 +394,7 @@ button, input, select, textarea {
     font-size: 13px;
     line-height: 20px;
     background-color: #fafafa;
+    display: none;
 }
 
 .box_desc .desc_error {
