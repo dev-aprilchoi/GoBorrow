@@ -13,7 +13,7 @@ body {
 
 .logo {
   text-align: center;
-width: 200px;
+  width: 200px;
 }
 
 h2 {
@@ -50,17 +50,22 @@ h2 {
   cursor: pointer;
 }
 
-.facebook_icon{
+.facebook_icon {
   width: 65px;
   height: 65px;
   cursor: pointer;
 }
-.verificaion_icon{
+.verificaion_icon {
   width: 65px;
   height: 65px;
   cursor: pointer;
 }
 
-.content_login{
+.content_login {
   cursor: pointer;
+}
+
+a.no-underline {
+  text-decoration: none;
+  color: #000;
 }
