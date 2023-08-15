@@ -26,7 +26,7 @@
                                         <div class="box_tf">
                                             <label class="screen_out" for="id">입력</label>
                                             <!-- 포커스가 됐을때 placeholder 비활성화, 입력값 없이 포커스 나갔을때 placeholder 활성화 시킴 -->
-                                            <input type="text" id="loginId" name="loginId" placeholder="카카오메일 아이디, 이메일, 전화번호" class="tf_g" value onfocus="this.placeholder = ''"/n onblur="this.placeholder = '카카오메일 아이디, 이메일, 전화번호'" />
+                                            <input type="text" id="loginId" name="loginId" placeholder="카카오메일 아이디, 이메일, 전화번호" class="tf_g" value onfocus="f()" onblur="f2()">
                                             <div class="util_tf"></div>
                                                 <!-- <p class="err-msg" id="loginId-err-msg">카카오계정을 입력해 주세요.</p> -->
                                                 <div class="util_tf">
@@ -38,7 +38,7 @@
                                                     <span class="txt_mail" id="txtMail" style="display: none;">@kakao.com</span>
                                                 </div>
                                             </div>
-                                            <p class="info_tip" role="alert" style="display: none;" onclick="tipDisappear()">
+                                            <p class="info_tip" role="alert" style="display: none;">
                                                 <span role="text">
                                                     <span class="txt_tip">TIP</span>
                                                     카카오메일이 있다면 메일 아이디만 입력해 보세요.
@@ -50,19 +50,17 @@
                                             <!-- 포커스가 됐을때 placeholder 비활성화, 입력값 없이 포커스 나갔을때 placeholder 활성화 시킴 -->
                                             <!-- 비밀번호 input tag에 포커스가 되면 tip이 사라져야함 -->
                                             <label class="screen_out" for="password">비밀번호 입력</label>
-                                            <input type="password" id="password" name="password" placeholder="비밀번호" autocomplete="off" class="tf_g" onfocus="this.placeholder = ''"/ onblur="this.placeholder = '비밀번호 입력'" />
+                                            <input type="password" id="password" name="password" placeholder="비밀번호" autocomplete="off" class="tf_g" onblur="this.placeholder = '비밀번호 입력'" />
                                         </div>
                                     </div>
                                     <div class="set_login">
-                                        <div class="item_choice">
-                                            <input type="checkbox" id="staySignedIn" class="inp_choice" name="staySignedIn" value="false">
-                                            <label class="lab_choice" for="staySignedIn" id="label-staySignedIn">
-                                                <button class="ico_comm ico_check" type="button"><img class="circle-button" src="../images/icons/circle.png" alt="circle-button" onclick="checked()"></button>
+                                        <label class="item_choice" style="font-size: ;">
+                                            <input type="checkbox" id="check" class="inp_choice" name="staySignedIn" value="1">
+                                                <div id="login-check" style="display:inline-block;" type="checkbox"></div>
                                                 로그인 상태 유지
-                                            </label>
-                                        </div>
+                                        </label>
                                     </div>
-                                    <div class="box_desc" id="idError" role="alert">
+                                    <div class="box_desc" id="idError" role="alert" >
                                         <p class="desc_error" id="errorP">
                                             카카오계정을 입력해 주세요.
                                             <br>
@@ -76,7 +74,7 @@
                                     </div>
                                     <div class="confirm_btn">
                                         <!-- button 기본 type="submit" 이라서 바꿔준다 -->
-                                        <button type="button" class="btn_g highlight submit" onclick="onLogin()">로그인</button>
+                                        <button type="button" class="btn_g highlight submit" onclick="onLogin()" onblur="f3()">로그인</button>
                                         <!-- QR코드 로그인은 진행하지 않기로해서 주석처리 해두었습니다 -->
                                         <!-- <span class="line_or">
                                             <span class="txt_or">또는</span>

@@ -330,6 +330,19 @@ button, input, select, textarea {
     margin: 0 8px 0 0;
 }
 
+#login-check{
+    background-image: url('../images/icons/circle.png');
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#check:checked + #login-check{
+    background-image: url('../images/icons/checked.png');
+}
+
 .id-tip{
     color:rgba(0,0,0,.06);
     padding: 0 16px;
@@ -364,6 +377,10 @@ button, input, select, textarea {
     color: palevioletred;
     font-size: 16px;
     display: none;
+}
+
+.item_choice{
+    
 }
 
 .item_choice .lab_choice .ico_check {
@@ -500,6 +517,16 @@ button {
 
 .btn_g.highlight {
     background-color: #fee500;
+}
+
+.btn_g.highlight:hover {
+    background-color: #fada0a;
+}
+
+@media only screen and (max-width: 767px){
+.type_responsive button, .type_responsive input, .type_responsive select, .type_responsive td, .type_responsive textarea, .type_responsive th, body.type_responsive {
+    /* font-size: 14px; */
+}
 }
 
 address, button[type=submit], caption, cite, code, dfn, em, input[type=submit], var {

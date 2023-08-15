@@ -22,11 +22,12 @@ const onLogin = ()=>{
     // 4.로그인 input tag에 포커스가 되면 tip div가 생겼다가 커서를 다른곳으로 옮기면 사라져야함
     // (if loginIdinput tag가 onclick이 된다면, 'tip' p tag의 display:block; 으로 바꿔줘)
     
-    const tipDisappear = ()=>{
-        let tip = document.querySelector('#tip');
+    const showTip = ()=>{
+        let tip = document.querySelector('.info_tip');
+        console.log('tip');
         let idInput = document.querySelector('#loginId');
 
-        if(idInput.event.focus()){ // focus() 된 상태를 어떻게 찾을까요?
+        if(idInput.onfocus()){ // focus() 된 상태를 어떻게 찾을까요?
             info_tip.style.display = 'block';
         }else{
             info_tip.style.display = 'none';
@@ -44,10 +45,26 @@ const onLogin = ()=>{
         pwError.style.display = 'none';
     }
 
-    // 6. 로그인 상태 유지버튼을 onclick 했을때 circle icon -> checked icon으로 바뀌어야 한다
-    // (onclick 했을때 img 경로를 변경해주면 되지 않을까?)
-    function checked(){
-        let circleIcon = document.querySelector('.circle-button').src;
-        console.log(circleIcon);
-        }
 }
+// 6. 로그인 상태 유지버튼을 onclick 했을때 circle icon -> checked icon으로 바뀌어야 한다
+// (onclick 했을때 img 경로를 변경해주면 되지 않을까?)
+// 네이버 로그인 상태유지 check box참고(value="on" 으로 바뀌면서 아이콘 변함)
+function checked(){
+    let circleIcon = document.querySelector('.circle-button').src;
+    console.log(circleIcon);
+    document.querySelector('.circle-button').src = circleIcon.replace('circle', 'checked');
+    }
+
+function f(){
+        document.querySelector('.info_tip').style.display = 'block';
+
+    }
+function f2(){
+        document.querySelector('.info_tip').style.display = 'none';
+    }
+
+function f3(){
+        console.log('이벤트 실행됨');
+        document.getElementById('idError').style.display = 'none';
+        document.getElementById('pwError').style.display = 'none';
+    }
