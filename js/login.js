@@ -10,16 +10,7 @@ const onLogin = ()=>{
         idError.style.display = 'none';
     }
 
-    // 2. 이메일 input tag에 1글자 이상이 입력되면 오른쪽 끝에 X(cancle.png)버튼이 생겨야한다
-
-    // 3.이메일 input tag에 3글자 이상이 쓰이면 오른쪽 끝에 X(cancle.png)버튼과 @kakao.com이 자동으로 생겨야한다
-    // if(emailInput.value.length >= 3){
-    //     //3글자 이상일때 실행됨
-    //     txtMail.style.display = 'block';
-    // }
-    // 로그인버튼을 누르지 않았으니 emailInput이 확인이 불가능해서 2,3번 기능을 구현할 수 없을것 같기도하다...
-
-    // 4.로그인 input tag에 포커스가 되면 tip div가 생겼다가 커서를 다른곳으로 옮기면 사라져야함
+    // 2.로그인 input tag에 포커스가 되면 tip div가 생겼다가 커서를 다른곳으로 옮기면 사라져야함
     // (if loginIdinput tag가 onclick이 된다면, 'tip' p tag의 display:block; 으로 바꿔줘)
     
     const showTip = ()=>{
@@ -34,8 +25,7 @@ const onLogin = ()=>{
         }
     }
 
-    
-    // 5.비밀번호를 미입력하고 로그인을 눌렀을때 pwError의 div를 보여주기
+    // 3.비밀번호를 미입력하고 로그인을 눌렀을때 pwError의 div를 보여주기
     let pwInput = document.querySelector('#password');
     let pwError = document.querySelector('#pwError');
     if(pwInput.value === ''){
@@ -46,7 +36,7 @@ const onLogin = ()=>{
     }
 
 }
-// 6. 로그인 상태 유지버튼을 onclick 했을때 circle icon -> checked icon으로 바뀌어야 한다
+// 4. 로그인 상태 유지버튼을 onclick 했을때 circle icon -> checked icon으로 바뀌어야 한다
 // (onclick 했을때 img 경로를 변경해주면 되지 않을까?)
 // 네이버 로그인 상태유지 check box참고(value="on" 으로 바뀌면서 아이콘 변함)
 function checked(){
@@ -68,3 +58,23 @@ function f3(){
         document.getElementById('idError').style.display = 'none';
         document.getElementById('pwError').style.display = 'none';
     }
+
+
+// 해결되지 않은 문제 2가지 //
+// 1.id, pw input tag에 한 글자라도 입력시, 오른쪽 끝에 X(cancle.png)버튼이 생겨야한다
+// X버튼을 클릭하면 입력했던 것들이 reset(clear 된다)
+
+// 2.이메일 input tag에 3글자 이상이 쓰이면 오른쪽 끝에 X(cancle.png)버튼과 @kakao.com이 자동으로 생겨야한다
+    // if(emailInput.value.length >= 3){
+    //     //3글자 이상일때 실행됨
+    //     txt_Mail.style.display = 'block';
+    // }
+    // 로그인버튼을 누르지 않았으니 emailInput이 확인이 불가능하려나?
+if(emailInput.value >= 3){ 
+    function autoEmail(){
+        document.querySelector('.txt_mail').style.display = 'block';
+    }
+}else{  // 이메일이 입력 되었다는 소리(위의 if문 조건이 false일때)
+    document.querySelector('.txt_mail').style.display = 'none';
+}
+

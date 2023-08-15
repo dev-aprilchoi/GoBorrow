@@ -379,10 +379,6 @@ button, input, select, textarea {
     display: none;
 }
 
-.item_choice{
-    
-}
-
 .item_choice .lab_choice .ico_check {
     background-position: 0 0;
 }
