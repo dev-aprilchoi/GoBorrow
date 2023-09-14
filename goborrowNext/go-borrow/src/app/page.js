@@ -1,6 +1,9 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Body from './components/body'
 
 export default function Home() {
-  return (<h1>안녕</h1>)
+  return (
+    <>
+    <Body />
+    </>
+  )
 }
